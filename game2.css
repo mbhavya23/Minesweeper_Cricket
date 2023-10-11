@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('cricketg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: small;
+}
+
+button#startGame {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+#game-grid {
+  display: grid;
+  margin-top: 20px;
+  grid-gap: 2px;
+  justify-items: center;
+}
+
+.block {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(110, 139, 148);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.block.clicked {
+  background-color: green;
+}
+
+.fielder.clicked {
+  background-color: red;
+}
+
+#scoreboard {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+
+.block.power-up {
+  color: rgb(235, 14, 14);
+}
+
+button {
+  background-color: #4CAF50;
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}

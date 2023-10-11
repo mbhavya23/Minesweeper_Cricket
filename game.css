@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  background-image: url('cricketg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  color: #010615;
+}
+
+h2 {
+  text-align: center;
+  font-size: large;
+}
+
+h3 {
+  text-align: center;
+  font-size: larger;
+  
+}
+
+#score {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#gameGrid {
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgb(110, 139, 148);
+}
+
+.emoji {
+  display: inline-block;
+  font-size: 20px;
+}
+
+td.cell {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+td.fielder {
+  background-color: #ff0000; /* Red background color for fielder cells */
+  color: #fff; /* White text color for fielder cells */
+  font-size: 20px; /* Adjust the font size for the emojis */
+  text-align: center; /* Center the emojis vertically and horizontally */
+}
+
+
+td.fielder:hover {
+  background-color: #c20000;
+}
+td.clicked {
+  background-color: #00ff00; /* Green color for clicked cells without fielders */
+}
+
+td.fielder-clicked {
+  background-color: #ff0000; /* Red color for clicked cells with fielders */
+}
+
+.power-up-revealed {
+  background-color: yellow;
+}
+
+.power-up {
+  background-color: aqua;
+}
+
+button#reset {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button#reveal {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.fielder-revealed {
+  background-color: #f9f5b1; /* Yellow color for revealed fielders */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.modal .close{
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  margin-top: 20px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+

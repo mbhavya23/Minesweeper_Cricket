@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{biblatex}
+\addbibresource{report.bib}
+
+\title{\textbf{Minesweeper Cricket \linebreak Game \linebreak Report}}
+\author{Bhavya Sri M \\22B0918}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\clearpage
+
+\section{Description}
+My project is Minesweeper Cricket Game which is more modified version of the general Minesweeper game that is simple combination of two classic games, Minesweeper and cricket. This project involves designing and implementing game logic, creating a responsive and interactive user interface using HTML and CSS, and incorporating dynamic functionality using JavaScript.\\The player can select single player or a two player game.\\There are eleven fielders placed randomly in the game.\\When player clicks on a block, it is revealed if it does not contain a fielder, the player can score runs and the player can click on another random block. If the block contains a fielder the game ends and the final score is displayed.
+\\In a two player game if a player clicks on fielder the other player will be declared as winner.
+
+\section{Customization}
+\subsection{Single player}
+\begin{itemize}
+    \item Players can choose any grid size from 6 to 11.
+    \item Player name and the number of balls(i.e. number of clicks on the cells) are displayed.
+    \item The scores are given in random way like 0,1,2,3,4 and 6.
+    \item There are some PowerUps randomly placed in the gamegrid which increases the score by 4 times the actual score to the specific grid.
+    \item There is a button can Show Fielders which can be used to reveal fielder positions for one second only after 7 balls and score greater than 10.In any other way the button is disabled and can be used only once.The score will be reduced by 5 runs.
+    \item There is also a lifeline for a player when he clicks on a fielder which can be used only once in the game if the score is above 10 and if used the score will be reduced by 10.
+\end{itemize}
+
+\subsection{Two player}
+
+\begin{itemize}
+    \item Players can choose any grid size from 6 to 11.
+    \item The scores are given in random way like 0,1,2,3,4 and 6.
+    \item There are some PowerUps randomly placed in the game grid which increases the score by 4 times the actual score to the specific grid.
+\end{itemize}
+
+\section{Implementation}
+There are six html pages,three css files,two javascripts and four png files.
+\subsection{HTML Pages}
+\begin{enumerate}
+    \item instr1.html and instr2.html\\\\These are two html pages which consists of instructions of the game for single player and two player game respectively.
+    \item index.html\\\\This is the first game page which asks the player to go to single player game or two player game by clicking on buttons and also shows buttons for instructions.
+    \item home.html\\\\If we click on the single player the game takes us to the home.html page which shows a form asking the player to select the grid size and enter the player name.There is a start game button also.
+    \item game.html\\\\After clicking on the start game in home page it takes us to the game.html page by implementing the code and the game starts by initialising the grid.
+    \item game2.html\\\\If we click on the two player then the game takes us to the game2.html page and starts implementing when we click on the start game button.
+\end{enumerate}
+
+\subsection{CSS Styles}
+\begin{enumerate}
+    \item home.css - This is the page styling for the home.html page
+    \item game.css - This is the page styling for the game.html page containing the style for game grid and also styles for popups of power ups and game over.
+    \item game2.css - This is the page styling for the game2.html page containing the style for game grid.
+\end{enumerate}
+
+\subsection{Javascripts}
+\begin{enumerate}
+    \item game.js - This contains all the required script and code logic for implementing the game for single player involving many functionsfrom start game to end game.
+    \item game2.js - This contains all the required script and code logic for implementing the game for two players invovling many functions.
+\end{enumerate}
+
+The png files are used in css styling for background images.
+
+\section{Compilation}
+Open index.html page and then open with live server
+
+\nocite{*}
+\printbibliography
+\end{document}

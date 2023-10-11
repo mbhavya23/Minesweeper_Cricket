@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minesweeper Cricket</title>
+  <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+  <h1>Minesweeper Cricket</h1>
+
+  <h2>Player Name:
+  <strong>
+    <!-- JavaScript code to retrieve the player name from the query string parameter -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const playerName = urlParams.get(`player1`);
+      document.write(playerName);
+      </script>
+  <br>
+  <div id="score">Score: 0</div>   <!-- Displaying the score -->
+  <h3>Number of Balls: <span id="ballCount">0</span></h3>  <!-- Displaying the ball count i.e. number of clicks -->
+
+  <table id="gameGrid">
+    <!-- Grid cells will be dynamically generated here -->
+  </table>
+
+  <!-- Modal for power-up found -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Power-up Found 🤩!</h2>
+      <p id="powerscore" style="text-align: center;"></p>
+    </div>
+  </div>
+
+  <!-- Modal for game over -->
+<div id="gameOverModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gameover.png" alt="Image">
+    <p>Total Score: <span id="totalScore"></span></p>
+    <p>Number of Balls: <span id="numBalls"></span></p>
+  </div>
+</div>
+
+  <button id="reveal" onclick="revealFielders()">Show fielders</button>
+  <button id="reset">Reset Game</button>
+
+  <button onclick="navigate1()">Instructions</button>
+
+  <script src="game.js"></script>
+  <script>
+    function navigate1() {
+      window.location.href = "instr1.html";
+    }
+  </script>
+</body>
+</html>

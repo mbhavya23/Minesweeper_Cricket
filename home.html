@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minesweeper Cricket</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <h1>Welcome to Minesweeper Cricket !!</h1>
+  
+  <form id="playerForm" action="game.html" method="GET">
+    <label for="numPlayers">Number of Players:</label>
+    <select id="numPlayers" name="numPlayers">
+      <option value="1" selected>1</option>
+    </select>
+    <br>
+
+    <label for="gridSize">Grid Size:</label>
+    <input type="radio" id="gridSize6" name="gridSize" value="6" checked>
+    <label for="gridSize6"> 6x6 </label>
+    <input type="radio" id="gridSize7" name="gridSize" value="7">
+    <label for="gridSize7"> 7x7 </label>
+    <input type="radio" id="gridSize8" name="gridSize" value="8">
+    <label for="gridSize9"> 8x8 </label>
+    <input type="radio" id="gridSize9" name="gridSize" value="9">
+    <label for="gridSize9"> 9x9 </label>
+    <input type="radio" id="gridSize10" name="gridSize" value="10">
+    <label for="gridSize10"> 10x10 </label>
+    <input type="radio" id="gridSize11" name="gridSize" value="11">
+    <label for="gridSize11"> 11x11 </label>
+    
+    <br>
+
+    <div id="playerNames">
+      <label for="player1">Player Name:</label>
+      <input type="text" id="player1" name="player1" required>
+    <br>
+    </div>
+    
+    <input type="submit" value="Start Game">
+  </form>
+  
+  <button onclick="navigate1()">Instructions</button>
+
+  <script src="home.js"></script>
+  <script>
+    function navigate1() {
+      window.location.href = "instr1.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minesweeper Cricket </title>
+  <style>
+    /* Styling for the page */
+    body {
+        background-image: url(cricketg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    /* Styling for buttons */
+    button{
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #f13805ae;
+        margin-bottom: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Minesweeper Cricket Game</h1>
+
+  <button id="1" onclick="navigateToPage1()">Single player</button>
+
+  <button onclick="navigate1()">Instructions - 1 player</button>
+  
+  <button id="2" onclick="navigateToPage2()">Two Players</button>
+  
+  <button onclick="navigate2()">Instructions - 2 players</button>
+
+  
+  <script>
+    function navigateToPage1() {
+      window.location.href = "home.html";
+    }
+
+    function navigateToPage2() {
+      window.location.href = "game2.html";
+    }
+
+    function navigate1() {
+      window.location.href = "instr1.html";
+    }
+
+    function navigate2() {
+      window.location.href = "instr2.html";
+    }
+
+
+  </script>
+</body>
+</html>
